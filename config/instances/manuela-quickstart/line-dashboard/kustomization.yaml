@@ -16,8 +16,8 @@ bases:
 
 images:
 - name: line-dashboard
-  newName: quay.io/manuela/iot-frontend
-  newTag: quickstart
+  newName: image-registry.openshift-image-registry.svc:5000/iotdemo/iot-frontend
+  newTag: latest
 
 configMapGenerator:
 - name: line-dashboard-configmap
