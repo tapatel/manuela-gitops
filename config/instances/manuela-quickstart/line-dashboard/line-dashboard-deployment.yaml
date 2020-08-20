@@ -8,3 +8,7 @@ spec:
       containers:
       - name: line-dashboard
         imagePullPolicy: Always
+        volumeMounts:
+            - mountPath: /opt/app-root/output/conf/config.json
+              name: line-dashboard-configmap-vol
+              subPath: config.json
